@@ -9,11 +9,17 @@ function Navbar() {
     <>
       <nav
         id="home"
-        className="bg-white flex justify-between items-center h-2  mx-auto text-black py-10 px-0 md:px-10 shadow-[0_0_10px_rgba(0,0,0,.09);] z-10 mb-1 "
+        className="bg-transparent fixed flex justify-between  w-100 items-center h-2  mx-auto text-black py-10 px-0 md:px-10  z-10 mb-1 "
       >
-        <h1 className="w-full text-xl font-bold ms-5 text-[#2d2e32]">
-          Murad Ibrahimov
-        </h1>
+        <div className="w-full flex gap-3 ps-5
+        ">
+          <img src="/Logos/youthAndSportLogo.png" className="h-[30px]" />
+          <img
+            src="/Logos/Sustainable_Development_Goals_-_logo.png"
+            className="h-[30px]"
+          />
+          <img src="/Logos/ministryOfEcology.png" className="h-[30px]" />
+        </div>
         <ul className="hidden md:flex text-[#2d2e32] ">
           <li className="nav-link p-4 -bold">
             <a href="#home">Home</a>

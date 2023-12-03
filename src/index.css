@@ -1,3 +1,132 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
+
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Noto Sans", sans-serif;
+}
+
+h2,
+.h2 {
+  margin-left: -2px;
+  font-size: clamp(2.67rem, calc(2.26rem + 2.04vw), 3.84rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3,
+.h3 {
+  font-size: clamp(2.14rem, calc(1.86rem + 1.39vw), 2.94rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h4,
+.h4 {
+  font-size: clamp(1.71rem, calc(1.52rem + 0.93vw), 2.24rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h5,
+.h5 {
+  font-size: clamp(1.37rem, calc(1.25rem + 0.6vw), 1.71rem);
+  font-weight: 600;
+}
+
+h6,
+.h6 {
+  font-size: clamp(1.09rem, calc(1.02rem + 0.37vw), 1.31rem);
+}
+
+p,
+.p {
+  font-size: clamp(0.88rem, calc(0.83rem + 0.22vw), 1rem);
+}
+
+@layer utilities {
+  .clip-rectangular {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+  .clip-left-top-triangle {
+    clip-path: polygon(0 0, 0 100%, 100% 0);
+  }
+  .clip-right-top-triangle {
+    clip-path: polygon(0 0, 100% 0, 100% 100%);
+  }
+  .clip-left-bottom-triangle {
+    clip-path: polygon(0 0, 0% 100%, 100% 100%);
+  }
+  .clip-right-bottom-triangle {
+    clip-path: polygon(100% 0, 0 100%, 100% 100%);
+  }
+}
+@layer components {
+  .group-date {
+    @apply text-4xl text-[gray]
+    px-3 py-4
+    font-bold tracking-widest;
+  }
+  .timeline {
+    @apply border-l-4 border-gray-200
+    ml-3 mt-3 py-8
+    space-y-10;
+  }
+  .dot {
+    @apply absolute top-5 -left-3.5
+    bg-white
+    h-6 w-6
+    rounded-full
+    border-4 border-orange-500;
+  }
+  .timeline-date {
+    @apply text-xs font-bold
+    opacity-40 tracking-widest;
+  }
+  .timeline-title {
+    @apply text-3xl text-gray-600;
+  }
+}
+body::-webkit-scrollbar {
+  width: 5px; /* width of the entire scrollbar */
+}
+
+body::-webkit-scrollbar-track {
+  background: rgba(85, 85, 85, 0.44); /* color of the tracking area */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: blue; /* color of the scroll thumb */
+  border-radius: 20px; /* roundness of the scroll thumb */
+  border: 3px solid rgb(85, 85, 85); /* creates padding around scroll thumb */
+}
+.nav-link {
+  position: relative;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #6b7280; /* Change this color to your desired hover color */
+}
+
+.nav-link::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: #6b7280; /* Change this color to your desired underline color */
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-link:hover::before {
+  transform: scaleX(1);
+}
