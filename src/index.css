@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&display=swap");
+/* :root {
+  --Gradient1: Gradient2;
+} */
 
 html {
   scroll-behavior: smooth;
@@ -10,7 +13,11 @@ html {
 body {
   font-family: "Noto Sans", sans-serif;
 }
-
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
 h2,
 .h2 {
   margin-left: -2px;
@@ -129,4 +136,7 @@ body::-webkit-scrollbar-thumb {
 
 .nav-link:hover::before {
   transform: scaleX(1);
+}
+.Footer {
+  background: var(--Gradient2, linear-gradient(270deg, #007D6E 0%, #5EB47C 100%));
 }

@@ -19,6 +19,10 @@ export default {
           orangeGold: "rgb(248, 189, 73)",
         },
       },
+      screens: {
+        '1024':{ 'max': '1024px'},
+        '600' : { 'max': '600px'}
+      }
     },
   },
   plugins: [],
