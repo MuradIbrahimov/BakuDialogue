@@ -137,6 +137,26 @@ body::-webkit-scrollbar-thumb {
 .nav-link:hover::before {
   transform: scaleX(1);
 }
+
+/* FOOTER */
 .Footer {
   background: var(--Gradient2, linear-gradient(270deg, #007D6E 0%, #5EB47C 100%));
+}
+
+/* EVENTS */
+.Events div div{
+  background: var(--Gradient2, linear-gradient(270deg, #007D6E 0%, #5EB47C 100%));
+}
+
+/* JOINES */
+.Joinus {
+  background: var(--Gradient2, linear-gradient(270deg, #007D6E 0%, #5EB47C 100%));
+}
+
+.Input {
+  border-radius: 50px 0px 0px 50px;
+}
+
+.Button {
+  border-radius: 0px 50px 50px 0px;
 }

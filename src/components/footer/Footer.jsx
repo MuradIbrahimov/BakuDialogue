@@ -1,7 +1,7 @@
 import React from 'react'
-import moe from '../../../public/Logos/ministryOfEcology.png'
-import sdg from '../../../public/Logos/Sustainable_Development_Goals_-_logo.png'
-import yas from '../../../public/Logos/youthAndSportLogo.png'
+import moe from '/public/Logos/ministryOfEcology.png'
+import sdg from '/public/Logos/Sustainable_Development_Goals_-_logo.png'
+import yas from '/public/Logos/youthAndSportLogo.png'
 import MapComponent from './../map/MapComponent';
 import { FaInstagram,FaFacebook,FaYoutube,FaTwitter,FaLinkedin } from "react-icons/fa";
 
