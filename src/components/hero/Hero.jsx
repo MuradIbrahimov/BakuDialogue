@@ -1,29 +1,28 @@
 import React from "react";
-import LeftSideBarPattern from "../ui/LeftSideBarPattern";
 
 const Hero = () => {
   return (
-    <section
-      id="hero"
-      className="home py-5 md:py-0 bg-hero-pattern bg-cover bg-no-repeat md:min-h-[calc(100vh_-_84px)] flex-col justify-between items-center relative  shadow-[0_0_10px_rgba(0,0,0,.09);] ps-[15%] md:ps-[13%] "
-    >
-      <div className="container max-w-[1200px] mx-auto px-24 py-6 ">
-        <div className="sm:max-w-xl lg:max-w-3xl flex flex-col gap-y-6 py-8 px-4">
-          <h5 className="text-[#1A8575] text-xl md:text-xl lg:text-2xl  pt-5">
-            Youth for Sustainable Development Goals Project
-          </h5>
-          <h1 className="text-[#A3D619] text-2xl  lg:text-6xl  md:text-4xl  font-bold">
+    <section className=" md:min-h-[80vh]  flex  justify-center items-center relative  py-8 px-8">
+      <div className="About container  mx-auto flex gap-4  1024:flex-col-reverse 1024:items-center   justify-between md:gap-x-10   py-6 px-6 rounded-3xl">
+        <div class="content lg:max-w-[45%] gap ">
+          <h3 className="text-black text-base lg:mb-6 ">About</h3>
+          <h1 className="text-black text-5xl lg:mb-4">
             Baku Youth Climate Negotiations
           </h1>
-          <h2 className="text-primary-darkGreen text-sm  lg:text-2xl  md:text-base  font-bold my-0">
-            Turning Point Dialogues
-          </h2>
 
-          <p className="text-[#1A8575]">
+          <p className="text-black text-2xl mb-4">
             I Baku Youth Cimate Negotiations is an annual forum for youth
             discussions focused on regional climate negotiations and actions
-            against climate change.
+            against climate change. Involve exploring local challenges, sharing
+            best practices, and fostering collaboration among youth in the
+            region to contribute to the global effort to combat climate change.
           </p>
+        </div>
+        <div>
+          <img
+            src="/YouthNegotiation.png"
+            className="picture rounded-3xl  w-[500px] h-auto "
+          />
         </div>
       </div>
     </section>

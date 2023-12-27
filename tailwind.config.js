@@ -7,9 +7,7 @@ export default {
         polygon: "polygon(0 0, 0% 100%, 100% 100%)",
       },
       backgroundImage: {
-        "hero-pattern": "url('/Baku_Youth_Dialogue_Hero.png')",
-        "negotiations-pattern": "url('/Baku_Youth_Dialogue_Negotiations.png')",
-        "left-side-bar-pattern": "url('/Left_SideBar_Pattern.png')",
+        "topics-pattern": "url('/Topics.png')",
       },
       colors: {
         primary: {
