@@ -20,10 +20,9 @@ export default {
         },
       },
       screens: {
-        '1024':{ 'max': '1024px'},
-        '600' : { 'max': '600px'}
-      }
+        1024: { max: "1024px" },
+        600: { max: "600px" },
+      },
     },
   },
-  plugins: [],
 };

@@ -6,6 +6,7 @@ import Intro from "./components/intro/Intro";
 import Footer from "./components/footer/Footer";
 import Events from "./components/events/Events";
 import Joinus from "./components/joinus/Joinus";
+import Flags from "./flags/flags";
 
 function App() {
   return (
@@ -13,9 +14,10 @@ function App() {
       <div>
         <Navbar />
         <Intro />
+        <President />
+        <Flags />
         <Hero />
         <Negotiations />
-        <President />
         <Joinus />
         <Events />
         <Footer />

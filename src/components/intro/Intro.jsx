@@ -10,8 +10,8 @@ function Intro() {
       <Carousel.Item>
         <img src={img1} className="h-[100vh] d-block w-100 " />
         <Carousel.Caption className="text-center flex justify-center gap-4">
-          <MapPinIcon className="h-12  r-[15%] text-[#B8F21C] text-xl" />
-          <h3 className="text-[#B8F21C] ">“Göygöl” National Park</h3>
+          <MapPinIcon className="h-12  r-[15%] text-[#ffffff  ] text-xl" />
+          <h3 className="text-[#ffffff] ">“Göygöl” National Park</h3>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>

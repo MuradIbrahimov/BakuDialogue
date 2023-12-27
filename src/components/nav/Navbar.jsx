@@ -9,10 +9,12 @@ function Navbar() {
     <>
       <nav
         id="home"
-        className="bg-transparent fixed flex justify-between  w-100 items-center h-2  mx-auto text-black py-10 px-0 md:px-10  z-10 mb-1 "
+        className="bg-transparent absolute flex justify-between  w-100 items-center h-2  mx-auto text-black py-10 px-0 md:px-10  z-10 mb-1 "
       >
-        <div className="w-full flex gap-3 ps-5
-        ">
+        <div
+          className="w-full flex gap-3 ps-5
+        "
+        >
           <img src="/Logos/youthAndSportLogo.png" className="h-[30px]" />
           <img
             src="/Logos/Sustainable_Development_Goals_-_logo.png"
@@ -20,7 +22,7 @@ function Navbar() {
           />
           <img src="/Logos/ministryOfEcology.png" className="h-[30px]" />
         </div>
-        <ul className="hidden md:flex text-[#2d2e32] ">
+        <ul className="hidden md:flex text-[#ffffff] ">
           <li className="nav-link p-4 -bold">
             <a href="#home">Home</a>
           </li>
@@ -54,25 +56,25 @@ function Navbar() {
           <ul className="p-4 uppercase">
             <li
               onClick={handleNav}
-              className="nav-link text-2xl font-semibold p-4  text-xl"
+              className="nav-link  font-semibold p-4  text-xl"
             >
               <a href="#home">Home</a>
             </li>
             <li
               onClick={handleNav}
-              className="nav-link text-2xl font-semibold p-4  text-xl"
+              className="nav-link  font-semibold p-4  text-xl"
             >
               <a href="#about">About</a>
             </li>
             <li
               onClick={handleNav}
-              className="nav-link text-2xl font-semibold p-4  text-xl"
+              className="nav-link font-semibold p-4  text-xl"
             >
               <a href="#portfolio">Portfolio</a>
             </li>
             <li
               onClick={handleNav}
-              className="nav-link text-2xl font-semibold p-4  text-xl"
+              className="nav-link font-semibold p-4  text-xl"
             >
               <a href="#contact">Contact</a>
             </li>
